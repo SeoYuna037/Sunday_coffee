@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="gnb-sub">
+            <ul>
+                <li><a class="gnb-sub-menu" href="#">로그인</a></li>
+                <li><a class="gnb-sub-menu" href="#">매장찾기</a></li>
+                <li><a class="gnb-sub-menu" href="#">블로그</a></li>
+                <li><a class="gnb-sub-menu" href="#">인스타그램</a></li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/MOND COFFEE 1.png" alt="">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a class="nav-menu-title" href="#">SUNDAY COFFEE</a>
+                <a class="nav-menu-title" href="#">EVENT</a>
+                <a class="nav-menu-title" href="#">MENU</a>
+                <a class="nav-menu-title" href="#">STORE</a>
+                <a class="nav-menu-title" href="#">FRANCHISE</a>
+            </div>
+        </nav>
+    </header>
+    <section class="slider">
+        <div class="slider-banner">
+            <div class="slider-images">
+                <img class="slider-image fade" src="img/real-choco-banner.png" alt="">
+                <img class="slider-image fade" src="img/waffle-banner.png" alt="">
+                <img class="slider-image fade" src="img/juice-banner.png" alt="">
+            </div>
+            <div onclick="arr_slide(-1)" class="slide left">
+                <i class="xi-angle-left"></i>
+            </div>
+            <div onclick="arr_slide(1)" class="slide right">
+                <i class="xi-angle-right"></i>
+            </div>
+            <div class="btn-slider">
+                <span class="slider-bar" onclick="btn_slide(1)"></span>
+                <span class="slider-bar" onclick="btn_slide(2)"></span>
+                <span class="slider-bar" onclick="btn_slide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <section class="menu-section">
+        <div class="menu">
+            <div class="menu-title">
+                <h1>Sunday Coffee Menu</h1>
+                <span>선데이 커피의 다양한 메뉴들을 만나보세요</span>
+            </div>
+            <div class="menu-button">
+                <a href="#none">더 알아보기<i class="xi-angle-right-min"></i></a>
+            </div>
+            <div class="menu-image">
+                <img src="img/menu.png" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

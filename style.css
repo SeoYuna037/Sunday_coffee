@@ -1,0 +1,191 @@
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --main-color:#a5b88c;
+    --second-color:#8a665c;
+}
+*{
+    font-family: 'SUIT-Medium',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 1rem;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+/* ############# HEADER ############# */
+.header{
+    height: 180px;
+    background-color: var(--main-color);
+}
+.gnb-sub{
+    background-color: var(--second-color);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem 2rem;
+}
+.gnb-sub ul li{
+    float: left;
+    list-style: none;
+    padding: 0.5rem 1rem;
+}
+.gnb-sub ul li a{
+    color: white;
+}
+.gnb-sub ul li a:hover{
+    color: var(--main-color);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    height: 135px;
+    justify-content: center;
+}
+.logo img{
+    height: 115px;
+}
+
+.nav-menu-title{
+    font-size: 1.5rem;
+    padding: 4rem;
+    transition: 0.3s ease-out;
+}
+.nav-menu-title:hover{
+    color: #fff;
+}
+/* ############# Slide Banner ############# */
+.slider-banner{
+    height: 480px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider-banner .slider-images{
+    height: 100%;
+    width: 100%;
+}
+.slider-banner .slider-images img{
+    height: 100%;
+    width: 100%;
+}
+.btn-slider{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-slider span{
+    display: inline-block;
+    height: 6px;
+    border-radius: 5px;
+    width: 50px;
+    background-color: #fff;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.slider-banner .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider-banner .slide i{
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 2.0;
+    transition: 0.5s ease;
+}
+.slide.left{
+    left: 20rem;
+}
+.slide.right{
+    right: 20rem;
+}
+.slide i:hover{
+    background-color: rgba(202, 202, 202, 0.205);
+    border-radius: 50%;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from {opacity: .1}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from {opacity: .1}
+    to{opacity: 1}
+}
+/* ############# Menu ############# */
+.menu{
+    height: 750px;
+    width: 100%;
+    position: relative;
+}
+.menu-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.menu-title h1{
+    font-size: 3rem;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+.menu-title span{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+.menu-image{
+    height: 100%;
+    width: 100%;
+}
+.menu-image img{
+    height: 100%;
+    width: 100%;
+}
+.menu-button a{
+    border: 2px solid #fff;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 2rem;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+.menu-button a i{
+    position: relative;
+    left: 0.8rem;
+    top: 1px;
+    transition: 0.3s ease;
+}
+.menu-button a:hover{
+    background-color: var(--second-color);
+    color: white;
+}
+.menu-button a:hover i{
+    color: white;
+    left: 1.3rem
+}
