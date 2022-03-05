@@ -189,3 +189,101 @@ a{
     color: white;
     left: 1.3rem
 }
+/* ############# Company Section ############# */
+.company-section{
+    background-color: rgb(238, 238, 238);
+    padding: 10rem;
+}
+.company-section h1{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.7rem;
+    color: var(--main-color);
+}
+.frame{
+    padding-top: 4rem;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    display: flex;
+}
+.hexagon{
+
+    width: 400px;
+    height: 450px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.shape{
+    clip-path: polygon(50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%, 0 30%);
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    overflow: hidden;
+}
+
+.shape img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.hexagon .caption{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    color: #fff;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.hexagon:hover .caption{
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.hexagon .caption{
+    background: linear-gradient(to top, var(--main-color), transparent);
+}
+.hexagon .caption p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.hexagon:hover{
+    transform: translateY(-60px);
+}
+
+.hexagon::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    background: radial-gradient(rgba(0, 0, 0, 0.322), transparent, transparent);
+    bottom: -70px;
+    transition: 0.5s;
+}
+.hexagon:hover::before{
+    opacity: 0.6;
+    transform: scale(0.8);
+    bottom: -130px;
+}
+.hexagon .caption a{
+    border: 3px solid #8a665c;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.hexagon .caption a:hover{
+    background-color: var(--second-color);
+    color: #fff;
+}
