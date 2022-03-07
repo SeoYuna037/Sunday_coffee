@@ -44,3 +44,21 @@ function autoSlides(){
     slideBtn[autoSlideIndex - 1].style.background="white";
     setTimeout(autoSlides,6000);
 }
+
+// toTopButton
+const toTop=document.querySelector(".to-top");
+window.addEventListener("scroll",()=>{
+    if(window.pageYOffset>100){
+        toTop.classList.add("active");
+    }else{
+        toTop.classList.remove("active");
+    }
+})
+const comSection=document.querySelector(".frame");
+window.addEventListener("scroll",()=>{
+    if(window.pageYOffset>1080){
+        comSection.classList.add("active");
+    }else{
+        comSection.classList.remove("active");
+    }
+})
