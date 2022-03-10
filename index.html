@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunday Coffee</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body>
@@ -31,6 +32,10 @@
                 <a class="nav-menu-title" href="#">STORE</a>
                 <a class="nav-menu-title" href="#">FRANCHISE</a>
             </div>
+            <div class="menu-btn">
+                <i class="xi-bars open-menu"></i>
+                <i class="xi-close close-menu"></i>
+            </div>
         </nav>
     </header>
     <section class="slider">
@@ -51,7 +56,7 @@
                 <span class="slider-bar" onclick="btn_slide(2)"></span>
                 <span class="slider-bar" onclick="btn_slide(3)"></span>
             </div>
-        </div>
+        
     </section>
     <section class="menu-section">
         <div class="menu">
@@ -89,6 +94,12 @@
                     <img src="img/MOND COFFEE.png" alt="">
                 </div>
             </div>
+        </div>
+        <div class="company-caption">
+            <p>
+                선데이 커피는 매일 고민하고 도전하며 고객에게 최상의 커피를 제공합니다.
+            </p>
+            <a href="#none">브랜드 스토리<i class="xi-angle-right-min"></i></a>
         </div>
     </section>
     <section class="franchise_section">
@@ -197,7 +208,7 @@
                     <form class="modal-close">
                         <div class="modal-close-btn">
                             <input type="checkbox" name="todaycheck" id="today-close" value="Y"> <label for="today-close">오늘 하루 동안 보지 않기</label>
-                            <button class="modal-btn">[닫기]</button>
+                            <a href="#0" class="modal-btn">[닫기]</a>
                         </div>
                         
                     </form>

@@ -1,0 +1,180 @@
+@media (max-width:1360px){
+    /* ############# HEADER ############# */
+    .nav .nav-menu-title{
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+    /* ############# Slide Banner ############# */
+    .slider-banner .slider-images img{
+        object-position: center;
+    }
+    .slider-banner .slide{
+        display: none;
+    }
+    /* ############# Franchise Section ############# */
+    .franchise_consulting h2{
+        font-size: 1.7rem;
+    }
+    .franchise_url{
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width:800px){
+/* ############# HEADER ############# */
+    .nav{
+        position: relative;
+    }
+    .nav-menu{
+        z-index: 10;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #a5b88c;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+    .menu-btn{
+        display: inline-block;
+        position: absolute;
+        right: 2rem;
+    }
+    .menu-btn .close-menu{
+        display: none;
+    }
+    .menu-btn i{
+        color: #fff;
+        font-size: 2rem;
+    }
+    .nav-menu.active{
+        right: 0;
+    }
+    .menu-btn .open-menu.menu-off{
+        display: none;
+    }
+    .menu-btn .close-menu.menu-on{
+        display: block;
+    }
+    .nav-menu a {
+        color: #fff;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
+      .nav-menu a:hover{
+          color: #8a665c;
+      }
+/* ############# Company Section ############# */
+      .hexagon{
+          width: 300px;
+          height: 350px;
+      }
+      .hexagon .caption p{
+          font-size: 1rem;
+      }
+/* ############# Franchise Section ############# */
+    .franchise_section{
+        height: 100vh;
+    }
+    .franchise_image{
+          flex-direction: column;
+    }
+    .store{
+        height: 250px;
+    }
+/* ############# SNS Section ############# */
+    .sns-up{
+        width: 100%;
+    }
+    .sns-item-photo{
+        height: 180px;
+    }
+/* ############# footer Section ############# */
+    footer{
+        padding: 3rem 0;
+    }
+    .footer-copy img{
+        height: 80px;
+        width: 80px;
+    }
+    .footer-information p{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:740px){
+/* ############# Menu ############# */
+    .menu-title span{
+        font-size: 1rem;
+    }
+    .menu-title h1{
+        font-size: 2rem;
+    }
+    .menu-button a{
+        top: 65%;
+    }
+/* ############# Company Section ############# */
+    .company-section{
+        position: relative;
+    }
+    .hexagon{
+        display: none;
+    }
+    .company-caption{
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .company-caption p{
+        margin-bottom: 30px;
+    }
+    .company-caption a{
+        border: 3px solid #8a665c;
+        padding: 1rem 2rem;
+        background-color: #fff;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+    .company-section a:hover {
+        background-color: var(--second-color);
+        color: #fff;
+    }
+    .company-section a:hover i{
+        color: #fff;
+    }
+/* ############# SNS Section ############# */
+    .sns-item{
+        width: 200px;
+    }
+/* ############# footer Section ############# */
+    .footer-policy a{
+        display: block;
+        text-align: center;
+        padding: 0.5rem;
+    }
+.footer-policy a::after{
+    display: none;
+}
+/* ############# To Top button, Chat button ############# */
+    .to-top{
+        width: 3rem;
+        height: 3rem;
+    }
+    .to-top i{
+        font-size: 1.7rem;
+    }
+    .chat-button{
+        width: 3rem;
+        height: 3rem;
+    }
+    .chat-button span{
+        display: none;
+    }
+    .chat-button i{
+        font-size: 1.7rem;
+    }
+}

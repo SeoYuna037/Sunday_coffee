@@ -12,11 +12,13 @@
 *{
     font-family: 'SUIT-Medium',sans-serif;
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     outline: none;
     font-size: 1rem;
     color: #000;
+}
+body{
+    padding-top: 180px;
 }
 html{
     scroll-behavior: smooth;
@@ -27,8 +29,12 @@ a{
 }
 /* ############# HEADER ############# */
 .header{
+    z-index: 9;
+    position: fixed;
     height: 180px;
     background-color: var(--main-color);
+    width: 100%;
+    top: 0;
 }
 .gnb-sub{
     background-color: var(--second-color);
@@ -66,9 +72,12 @@ a{
 .nav-menu-title:hover{
     color: #fff;
 }
+.menu-btn{
+    display: none;
+}
 /* ############# Slide Banner ############# */
 .slider-banner{
-    height: 480px;
+    height: auto;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -78,10 +87,11 @@ a{
     width: 100%;
 }
 .slider-banner .slider-images img{
-    height: 100%;
+    height: auto;
     width: 100%;
     object-fit: cover;
 }
+
 .btn-slider{
     position: absolute;
     bottom: 20px;
@@ -303,6 +313,9 @@ a{
     background-color: var(--second-color);
     color: #fff;
 }
+.company-caption{
+    display: none;
+}
 /* ############# Franchise Section ############# */
 .franchise_section{
     width: 100%;
@@ -413,13 +426,13 @@ a{
 .sns-item-photo img:hover{
     transform: scale(1.1);
 }
-/* ############# SNS Section ############# */
+/* ############# footer Section ############# */
 footer{
     background-color: var(--second-color);
     padding: 3rem;
 }
 .footer{
-    width: 1930px;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -559,8 +572,7 @@ footer{
 .modal-close-btn label{
     color: #fff;
 }
-.modal-close-btn button{
-    background-color: transparent;
+.modal-close-btn .modal-btn{
     border: none;
     color: #fff;
 }

@@ -57,7 +57,7 @@ window.addEventListener("scroll",()=>{
 //.frame animation
 const comSection=document.querySelector(".frame");
 window.addEventListener("scroll",()=>{
-    if(window.pageYOffset>1080){
+    if(window.pageYOffset>800){
         comSection.classList.add("active");
     }else{
         comSection.classList.remove("active");
@@ -73,7 +73,7 @@ window.addEventListener("scroll",()=>{
 //     modal.classList.add("hidden");
 // }
 // closeBtn.addEventListener("click",closeModal);
-const modal=document.querySelector(".modal");
+const modal=document.querySelector(".pop-modal");
 const closeModal=document.querySelector(".modal-btn");
 const getCookie=function(cname){
     const name=cname+"=";
@@ -103,12 +103,17 @@ if(cookiedata.indexOf("close=Y")<0){
 }else{
     modal.style.display="none";
 }
-const modalClose= function(){
-    modal.style.display="none";
-}
 closeModal.addEventListener('click',function(){
     couponClose();
-    if(document.querySelector('input[name="todaycheck"]').checked===false){
-        modalClose();
-    }
 })
+
+// menu-btn
+const navMenu=document.querySelector('.nav-menu')
+const navMenuOpen=document.querySelector('.open-menu');
+const navMenuClose=document.querySelector('.close-menu');
+document.querySelector('.menu-btn').onclick=()=>{
+    navMenu.classList.toggle('active');
+    navMenuOpen.classList.toggle('menu-off');
+    navMenuClose.classList.toggle('menu-on');
+}
+
