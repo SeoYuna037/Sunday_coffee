@@ -1,0 +1,155 @@
+:root{
+    --main-color:#a5b88c;
+    --second-color:#8a665c;
+}
+/* ############# Brand-list Section ############# */
+.brand{
+    width: 100%;
+    height: auto;
+    padding: 15rem 0;
+    background: url(../img/brand-list.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.brand .brand-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.356);    
+    top: 0;
+    left: 0;
+}
+.brand-des{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.brand h1{
+    color: #fff;
+    font-size: 3rem;
+}
+.story-list{
+    padding-top: 2rem;
+}
+.story-list a{
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    margin: 1rem;
+    color: var(--main-color);
+    background-color: #fff;
+    border-radius: 5px;
+}
+.story-list a:hover{
+    color:#fff;
+    background-color: var(--main-color);
+}
+/* ############# Brand story Section ############# */
+.sunday-coffe-intro{
+    margin: 15rem;
+}
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.intro-img{
+    width: 600px;
+    height: 700px;
+}
+.intro-img img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.intro-des{
+    position: relative;
+    height: 700px;
+    margin: 2rem;
+}
+.intro-des h1{
+    font-size: 2.5rem;
+}
+.intro-des h1 span{
+    font-size: 5rem;
+}
+.intro-des p{
+    position: absolute;
+    font-size: 1.1rem;
+    bottom: 0;
+}
+.value{
+    margin: 15rem;
+    text-align: center;
+}
+.value h1{
+    font-size: 2.5rem;
+    padding: 2rem;
+    position: relative;
+}
+.value h1::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--second-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.value-list{
+    padding-top: 2rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.value-list img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+.value-item span{
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.value-list img:hover{
+    transform: translateY(-10px);
+    border: 2px solid #000;
+}
+.value-des{
+    padding-top: 2rem;
+    font-size: 1.1rem;
+}
+.map{
+    margin: 5rem 15rem;
+    text-align: center;
+}
+.map h1{
+    font-size: 2.5rem;
+    position: relative;
+    padding: 2rem;
+}
+.map h1::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--second-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.map iframe{
+    margin-top: 4rem;
+}
