@@ -28,6 +28,9 @@ brand story 페이지가 작성되어있습니다.
 >사이트에 접속 시 팝업 창이 뜨며, 하루동안 안 보기를 체크 후 창을 끄면 24시간 동안 창이 뜨지 않습니다.
 반응형으로 제작되었습니다.
 
+<img src="https://user-images.githubusercontent.com/96972549/160272541-5e4ec243-f012-4920-af09-5c2750155ca1.gif">
 
 #### 2.브랜드 스토리
 >브랜드 스토리와 찾아오시는 길 페이지가 구성되어있습니다.
+
+<img src="https://user-images.githubusercontent.com/96972549/160272551-42bd7b5c-3ce2-4cea-b51c-787adabdc81c.gif">
