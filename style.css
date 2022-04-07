@@ -7,7 +7,7 @@
 }
 :root{
     --main-color:#a5b88c;
-    --second-color:#8a665c;
+    --second-color:#825347;
 }
 *{
     font-family: 'SUIT-Medium',sans-serif;
@@ -465,7 +465,7 @@ footer{
     padding-top: 2rem;
 }
 .footer-information p{
-    color: rgb(223, 223, 223);
+    color: #fff;
 }
 .footer-information p span::after{
     content: '|';
