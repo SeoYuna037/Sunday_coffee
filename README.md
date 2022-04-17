@@ -34,3 +34,13 @@ brand story 페이지가 작성되어있습니다.
 >브랜드 스토리와 찾아오시는 길 페이지가 구성되어있습니다.
 
 <img src="https://user-images.githubusercontent.com/96972549/160272551-42bd7b5c-3ce2-4cea-b51c-787adabdc81c.gif">
+
+### 주요코드
+>이미지 슬라이드
+<img src="https://user-images.githubusercontent.com/96972549/163721714-f83081e3-4915-4f78-ba7e-1619628191eb.png">
+
+>to-top 버튼
+<img src="https://user-images.githubusercontent.com/96972549/163721754-6b32744a-da5c-41a8-9931-9cde9ae7e1cc.png">
+
+>팝업창 쿠키 이용해 24시간 후 다시 뜨게
+<img src="https://user-images.githubusercontent.com/96972549/163721795-b8eee3c6-c09a-4353-94e4-04bce81c6542.png">
